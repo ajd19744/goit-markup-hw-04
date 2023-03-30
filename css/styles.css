@@ -294,13 +294,38 @@ body {
 .team-title-text {
   padding: 32px 0;
 }
-
+/** Section 5 customers */
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.customers-title {
+  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--main-color-text-background, #2e2f42);
+}
+.customer-list {
+  display: flex;
+}
+.customer-item {
+}
+.customer-link {
+}
+.customer-svg {
+}
 /** ===========footer=========== */
 
 .footer {
+  width: 1158px;
   padding-top: 100px;
   padding-bottom: 100px;
   background: var(--main-color-text-background, #2e2f42);
+  margin-left: auto;
+  margin-right: auto;
 }
 .container-div {
   width: 264px;
@@ -316,7 +341,32 @@ body {
   letter-spacing: 0.02em;
   color: var(--background-and-text-footer, #f4f4fd);
 }
+.footer-div {
+  display: flex;
+}
+.second-div {
+  margin-left: 120px;
+}
+.footer-list {
+  display: flex;
+}
+.footer-title {
+  margin-bottom: 16px;
 
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--background-and-hero-text, #ffffff);
+}
+.footer-item:nth-child(n + 2) {
+  margin-left: 16px;
+}
+/* .customer-svg {
+  fill: #4d5ae5;
+}
+.customer-svg:is(:hover, :focus) {
+  fill: #31d0aa;
+} */
 /** ===========bottoms=========== */
 
 .filters {
