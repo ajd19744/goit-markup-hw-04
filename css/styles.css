@@ -266,6 +266,9 @@ body {
 .team-item {
   width: calc((100% - 24px * 3 / 4));
   background: var(--background-and-hero-text, #ffffff);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-title-text {
   padding: 32px 0;
@@ -299,11 +302,11 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: var(--button-logo-color), #4d5ae5;
+  background-color: #4d5ae5;
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: var(--background-and-text-footer), #f4f4fd;
+  fill: #f4f4fd;
 }
 .team-soc-svg {
   fill: currentColor;
@@ -340,7 +343,7 @@ body {
   width: 100%;
   height: 100%;
   cursor: pointer;
-  border: 1px solid var(--customer-logo-color), #8e8f99;
+  border: 1px solid #8e8f99;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -351,10 +354,10 @@ body {
   fill: currentColor;
 }
 .customer-svg:is(:hover, :focus) {
-  fill: var(--customer-logo-hover-color), #404bbf;
+  fill: #404bbf;
 }
 .customer-link:is(:hover, :focus) {
-  border: 1px solid var(--customer-logo-hover-color), #404bbf;
+  border: 1px solid #404bbf;
 }
 
 /*? ===========footer=========== */
@@ -406,7 +409,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: var(--button-logo-color), #4d5ae5;
+  background-color: #4d5ae5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -429,6 +432,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
 .filters-list .filters-item + .filters-item {
   margin-left: 24px;
 }
@@ -451,6 +455,9 @@ body {
 .filters-button:is(:hover, :focus) {
   color: var(--background-and-hero-text, #ffffff);
   background-color: var(--button-touch-color, #404bbf);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 /*? ===========section row=========== */
@@ -464,6 +471,10 @@ body {
   width: calc((100% - 48px) / 3);
   margin-left: 24px;
   margin-bottom: 48px;
+}
+.row-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .row-item:nth-child(3n + 1) {
   margin-left: 0;
