@@ -116,7 +116,6 @@ body {
 
 .header-contact {
   padding: 24px 0;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -195,10 +194,10 @@ body {
   margin-left: 24px;
 }
 .advantages-div {
-  width: 264px;
+  margin-bottom: 8px;
   height: 112px;
   border-radius: 4px;
-  background-color: var(--background-and-text-footer), #f4f4fd;
+  background-color: #f4f4fd;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -312,7 +311,7 @@ body {
   fill: currentColor;
 }
 .team-soc-link:is(:hover, :focus) {
-  background-color: var(--icon-hover-color);
+  background-color: #404bbf;
 }
 
 /*? Section 5 customers */
@@ -336,8 +335,9 @@ body {
   gap: 24px;
 }
 .customer-item {
-  width: 168px;
+  width: calc((100%-24 * 5) / 6);
   height: 88px;
+  display: flex;
 }
 .customer-link {
   width: 100%;
@@ -346,9 +346,9 @@ body {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  color: var(--customer-logo-color), #8e8f99;
+  align-items: center;
+  color: #8e8f99;
 }
 .customer-svg {
   fill: currentColor;
@@ -357,7 +357,8 @@ body {
   fill: #404bbf;
 }
 .customer-link:is(:hover, :focus) {
-  border: 1px solid #404bbf;
+  border-color: #404bbf;
+  color: #404bbf;
 }
 
 /*? ===========footer=========== */
@@ -389,10 +390,11 @@ body {
 .second-div {
   margin-left: 120px;
 }
-.footer-title {
+.footer-text-second {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.5;
+  font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--background-and-hero-text, #ffffff);
 }
@@ -438,8 +440,8 @@ body {
 }
 .filters-list button {
   border: 1px solid #e7e9fc;
-  padding: 12px 24px;
   border-radius: 4px;
+  padding: 12px 24px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -452,12 +454,13 @@ body {
   cursor: pointer;
   background: var(--background-and-text-footer, #f4f4fd);
 }
-.filters-button:is(:hover, :focus) {
+.filters-button:hover,
+.filters-button:focus {
   color: var(--background-and-hero-text, #ffffff);
   background-color: var(--button-touch-color, #404bbf);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  border-color: #404bbf;
 }
 
 /*? ===========section row=========== */
@@ -472,7 +475,8 @@ body {
   margin-left: 24px;
   margin-bottom: 48px;
 }
-.row-item:hover {
+.row-item > .link:hover {
+  display: block;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
